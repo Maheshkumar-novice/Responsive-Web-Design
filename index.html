@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeCodeCamp | Responsive Web Design Projects</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: blue;
+        font-size: clamp(1.7rem, 5vw, 2.5rem);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #particles-js {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el"></canvas>
+    </div>
+    <a href="./tribute/index.html" target="_blank">Tribute Page</a>
+    <a href="./survey/index.html" target="_blank">Survey Form</a>
+    <a href="./documentation/index.html" target="_blank">Documentation</a>
+    <a href="./product_landing/index.html" target="_blank">Product Landing</a>
+    <a href="./portfolio/index.html" target="_blank">Portfolio</a>
+    <script src="./particles_effect/particles.js"></script>
+    <script src="./particles_effect/app.js"></script>
+  </body>
+</html>

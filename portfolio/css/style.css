@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+}
+/* button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  margin-top: 50px;
+  padding: 10px;
+  width: 150px;
+  outline: none;
+} */
+img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+/* button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px soid black;
+} */
+#toolkit a,
+#projects #more,
+#welcome-section a {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid white;
+  /* border-radius: 10px; */
+  transition: all ease-in-out 0.3s;
+}
+#toolkit a:hover,
+#projects #more:hover,
+#welcome-section a:hover {
+  color: black;
+  background-color: white;
+}
+section i {
+  padding: 10px;
+}
+
+/* navbar */
+#navbar {
+  background-color: #333;
+  background-image: linear-gradient(to bottom, #333, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid purple;
+}
+
+#nav-list {
+  display: flex;
+}
+
+#nav-list li {
+  opacity: 0.8;
+  list-style: none;
+  margin: 1.5rem;
+}
+
+#nav-list li:hover {
+  opacity: 1;
+}
+
+/* welcome */
+#welcome-section {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, #333, #000);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#welcome-section h1 {
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+}
+
+#welcome-section p {
+  color: purple;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* toolkit */
+#toolkit {
+  padding-top: 15vh;
+  /* height: 100vh; */
+  background-color: #333;
+  background-image: linear-gradient(to top right, #333, #000);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#toolkit ul {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#toolkit ul li {
+  list-style: none;
+  font-size: 40px;
+  border: 3px solid purple;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#toolkit ul li:hover {
+  border: 3px solid white;
+  color: purple;
+  background-color: #fff;
+}
+
+#toolkit h2 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+}
+
+/* projects */
+#projects {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, #333, #000);
+  padding-top: 20vh;
+  /* height: 180vh;
+  max-height: 240vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#projects img {
+  margin: 20px;
+  height: 300px;
+  max-width: 500px;
+  object-fit: scale-down;
+  border-bottom: 1px solid #333;
+}
+
+#projects .project-flex a {
+  border-radius: 10px;
+  opacity: 0.9;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  border: 2px solid #333;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .project-flex a:hover {
+  opacity: 1;
+}
+
+#projects a > p {
+  padding-bottom: 10px;
+}
+
+#projects h2 {
+  margin-bottom: 100px;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* contact */
+#contact {
+  background-color: #333;
+  background-image: linear-gradient(to top right, #333, #000);
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact h2 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+
+#contact div .in-div {
+  border: 1px solid purple;
+  padding: 15px;
+  border-radius: 10px;
+
+  /* display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  row-gap: 1px;
+  column-gap: 1px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact div .in-div:hover {
+  background-color: white;
+  color: purple;
+  cursor: pointer;
+}
+
+#contact p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, #333, #000);
+  height: 10vh;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  border-top: 1px solid white;
+  padding: 50px;
+}
+
+/* media queries */
+@media (max-width: 860px) {
+  #welcome-section h1 {
+    font-size: 40px;
+  }
+  #welcome-section p {
+    font-size: 20px;
+  }
+  #toolkit h2,
+  #projects h2,
+  #contact h2 {
+    font-size: 40px;
+  }
+  #toolkit ul li {
+    font-size: 30px;
+  }
+}
